@@ -16,17 +16,17 @@ class App extends Component {
 
   render() {
     return (
-        <BrowserRouter>
-          <div>
-            <Header />
-            <Switch>
-              <Route path="/blogs/new" component={BlogNew} />
-              <Route exact path="/blogs/:_id" component={BlogShow} />
-              <Route path="/blogs" component={Dashboard} />
-              <Route path="/" component={Landing} />
-            </Switch>
-          </div>
-        </BrowserRouter>
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Switch>
+            <Route path="/blogs/new" component={BlogNew} />
+            <Route exact path="/blogs/:_id" component={BlogShow} />
+            <Route path="/blogs" component={Dashboard} />
+            <Route path="/" component={Landing} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
