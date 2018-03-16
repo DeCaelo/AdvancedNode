@@ -26,11 +26,10 @@ class BlogFormReview extends Component {
     const { onCancel } = this.props;
 
     return (
-      <div>
+      <div style={{ marginTop: '20px' }}>
         <button
           className="yellow darken-3 white-text btn-flat"
-          onClick={onCancel}
-        >
+          onClick={onCancel}>
           Back
         </button>
         <button className="green btn-flat right white-text">
@@ -55,7 +54,10 @@ class BlogFormReview extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit.bind(this)}>
+      <form
+        className="container"
+        style={{ marginTop: '100px' }}
+        onSubmit={this.onSubmit.bind(this)}>
         <h5>Please confirm your entries</h5>
         {this.renderFields()}
 
