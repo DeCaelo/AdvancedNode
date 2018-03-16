@@ -24,7 +24,10 @@ class BlogForm extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.props.handleSubmit(this.props.onBlogSubmit)}>
+        <form
+          className="container"
+          style={{ marginTop: '100px' }}
+          onSubmit={this.props.handleSubmit(this.props.onBlogSubmit)}>
           {this.renderFields()}
           <Link to="/blogs" className="red btn-flat white-text">
             Cancel
@@ -54,5 +57,5 @@ function validate(values) {
 export default reduxForm({
   validate,
   form: 'blogForm',
-  destroyOnUnmount: false
+  destroyOnUnmount: false,
 })(BlogForm);
