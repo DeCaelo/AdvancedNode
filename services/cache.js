@@ -9,6 +9,7 @@ const exec = mongoose.Query.prototype.exec;
 
 mongoose.Query.prototype.cache = function() {
   this.useCache = true;
+  return this;
 };
 
 mongoose.Query.prototype.exec = async function() {
