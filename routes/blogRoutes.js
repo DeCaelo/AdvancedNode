@@ -28,8 +28,8 @@ module.exports = app => {
       console.log('SERVING FROM REDIS CACHE');
       return res.send(JSON.parse(cachedBlogs));
     }
-    // if no, we need to respond to request and update our cache to store the data
 
+    // if no, we need to respond to request and update our cache to store the data
     const blogs = await Blog.find({ _user: req.user.id });
     console.log('SERVING FROM MONGODB');
     res.send(blogs);
