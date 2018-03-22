@@ -21,4 +21,4 @@ class CustomPage {
   }
 }
 
-module.exporrts = CustomPage;
+module.exports = CustomPage;
