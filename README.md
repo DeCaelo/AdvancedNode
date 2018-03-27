@@ -1,6 +1,8 @@
-# AdvancedNodeStarter
+# Advanced Node
 
-Starting project for a course on Advanced Node @ Udemy
+* Learn caching with Redis.
+* Continuous Integration with TravisCI.
+* add image upload with S3 and Node.
 
 #### 83. Inner Workings of Sessions:
 
