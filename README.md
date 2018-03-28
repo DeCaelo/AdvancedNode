@@ -1,6 +1,7 @@
 # Advanced Node
 
 * Learn caching with Redis.
+* Tests with Jest.
 * Continuous Integration with TravisCI.
 * add image upload with S3 and Node.
 
